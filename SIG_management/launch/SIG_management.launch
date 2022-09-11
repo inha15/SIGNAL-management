@@ -1,0 +1,59 @@
+<launch>
+  <node pkg="SIG_management" type="SIGNAL_manage" name="SIGNAL_manage_node" output="screen" >
+  <!--패키지 명, type => excutable file, cpp파일에 ROI_node로 되어있음-->
+  <!--SIG param-->
+    <param name = "Filter_switch" 		value = "true"/>
+  	<!--AEB Filter ROI-->
+	  <param name = "AEB_Filter_xmin" 		value = "0"/>
+	  <param name = "AEB_Filter_ymin" 		value = "-1.7"/>
+	  <param name = "AEB_Filter_zmin" 		value = "-1"/>
+	  <param name = "AEB_Filter_xmax" 		value = "10"/>
+	  <param name = "AEB_Filter_ymax" 		value = "1.7"/>
+	  <param name = "AEB_Filter_zmax" 		value = "1.5"/>	  
+
+  	<!--Parking Filter ROI-->
+	  <param name = "Parking_Filter_xmin" 		value = "0"/>
+	  <param name = "Parking_Filter_ymin" 		value = "-3.5"/>
+	  <param name = "Parking_Filter_zmin" 		value = "-1"/>
+	  <param name = "Parking_Filter_xmax" 		value = "10"/>
+	  <param name = "Parking_Filter_ymax" 		value = "0"/>
+	  <param name = "Parking_Filter_zmax" 		value = "1.5"/>	  
+
+  	<!--SmallStaticObstacle Filter ROI-->
+	  <param name = "SmallStaticObstacle_Filter_xmin" 		value = "0"/>
+	  <param name = "SmallStaticObstacle_Filter_ymin" 		value = "-1"/>
+	  <param name = "SmallStaticObstacle_Filter_zmin" 		value = "-1"/>
+	  <param name = "SmallStaticObstacle_Filter_xmax" 		value = "10"/>
+	  <param name = "SmallStaticObstacle_Filter_ymax" 		value = "1"/>
+	  <param name = "SmallStaticObstacle_Filter_zmax" 		value = "1"/>	  
+
+  	<!--LargeStaticObstacle Filter ROI-->
+	  <param name = "LargeStaticObstacle_Filter_xmin" 		value = "0"/>
+	  <param name = "LargeStaticObstacle_Filter_ymin" 		value = "-1.2"/>
+	  <param name = "LargeStaticObstacle_Filter_zmin" 		value = "-1"/>
+	  <param name = "LargeStaticObstacle_Filter_xmax" 		value = "10"/>
+	  <param name = "LargeStaticObstacle_Filter_ymax" 		value = "1.2"/>
+	  <param name = "LargeStaticObstacle_Filter_zmax" 		value = "1.5"/>	  
+
+  	<!--Deliv Filter ROI-->
+	  <param name = "DelivFilter_xmin" 		value = "4.3"/>
+	  <param name = "DelivFilter_ymin" 		value = "-4.5"/>
+	  <param name = "DelivFilter_zmin" 		value = "0"/>
+	  <param name = "DelivFilter_xmax" 		value = "10"/>
+	  <param name = "DelivFilter_ymax" 		value = "0"/>
+	  <param name = "DelivFilter_zmax" 		value = "0.8"/>
+
+	<!--Deliv raw LiDAR ROI-->
+	  <param name = "Deliv_raw_LiDAR_xmin" 		value = "0"/>
+	  <param name = "Deliv_raw_LiDAR_ymin" 		value = "-4.5"/>
+	  <param name = "Deliv_raw_LiDAR_zmin" 		value = "0"/>
+	  <param name = "Deliv_raw_LiDAR_xmax" 		value = "10"/>
+	  <param name = "Deliv_raw_LiDAR_ymax" 		value = "0"/>
+	  <param name = "Deliv_raw_LiDAR_zmax" 		value = "1"/>	  	 
+
+	<!--Sign Board Size-->
+	  <param name = "Sign_Board_Heigh" 		value = "0.8"/>
+	  <param name = "Sign_Board_Width" 		value = "0.8"/> 
+
+  </node>
+</launch>
